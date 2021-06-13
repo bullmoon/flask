@@ -6,7 +6,7 @@ def index():
 
 @app.route("/about")
 def about():
-    return render_template('about.html', title='About site'))
+    return render_template('about.html', title='About site')
 
 if __name__ == "__main__":
     app.run(debug=True)
