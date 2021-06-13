@@ -1,8 +1,10 @@
 from flask import Flask, render_template
 app = Flask(__name__)
+
+menu = ["Install", "First app", "Feedback"]
 @app.route("/")
 def index():
-    return render_template('index.html', title='About Flask')
+    return render_template('index.html', title='About Flask', menu=menu)
 
 @app.route("/about")
 def about():
